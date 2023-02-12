@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+} 
+.container {
+
+ position: absolute;
+  left:380px;
+  margin: 85px;
+  max-width: 600px;
+  padding: 40px;
+  background-color: white;
+}
+h1 {text-align: center;}
+h2 {text-align: center;}
+</style>
+</head>
+<body>
+<form action="logIn.jsp" method="post">
+  <div class="container">
+  	 <h1>Chaitanya Bharathi Institute of Technology</h1>
+  	 <h2>Login Form</h2>
+     <label> select:</label>
+     <input type="radio" name="studentOrfaculty" value="Student" required/>Student
+    <input type="radio" name="studentOrfaculty" value="Faculty" required/>Faculty
+    <br>
+    <br>
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+        
+    <button type="submit">Login</button>
+    <label>
+
+  </div>
+</form>
+</body>
+</html>
